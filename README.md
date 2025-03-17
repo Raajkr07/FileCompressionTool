@@ -17,5 +17,5 @@ This Java-based File Compression Tool implements:
 ## Installation
 1. **Clone the repository** (if using Git):
    ```sh
-   git clone https://github.com/yourusername/FileCompressionTool.git
+   git clone https://github.com/Rajkumar07/FileCompressionTool.git
 
