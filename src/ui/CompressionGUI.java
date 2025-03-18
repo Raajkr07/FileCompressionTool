@@ -3,7 +3,6 @@ package ui;
 import compression.*;
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.*;
 import java.io.*;
 import java.nio.file.Files;
 import java.nio.file.Paths;
@@ -11,7 +10,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class CompressionGUI extends JFrame {
-    private JTextField filePathField;
+    private final JTextField filePathField;
     private JButton compressButton, decompressButton, browseButton;
 
     public CompressionGUI() {

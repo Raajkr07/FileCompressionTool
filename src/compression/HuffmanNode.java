@@ -1,7 +1,5 @@
 package compression;
 
-import java.util.*;
-
 class HuffmanNode implements Comparable<HuffmanNode> {
     char character;
     int frequency;
