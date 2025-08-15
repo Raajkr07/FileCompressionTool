@@ -1,4 +1,4 @@
-package com.example.compression.compression;
+package com.example.compression.algorithm;
 
 import java.util.Scanner;
 import java.util.regex.Matcher;

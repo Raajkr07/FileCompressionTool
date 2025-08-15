@@ -1,12 +1,12 @@
 # **File Compression Tool** 🔥
 
-A **Java-based file compression tool** that implements three compression algorithms:  
+A **Java-based file com.example.compression.algorithm tool** that implements three com.example.compression.algorithm algorithms:  
 ✔ **Huffman Encoding** (Lossless Compression)  
 ✔ **LZW (Lempel–Ziv–Welch) Compression**  
 ✔ **Run-Length Encoding (RLE)**  
 ✔ **Graphical User Interface (GUI)**  
 ✔ **Multi-threading for large files**  
-✔ **File selection, compression, and decompression**
+✔ **File selection, com.example.compression.algorithm, and decompression**
 
 This tool comes with a **GUI built using Swing**, allowing users to compress and decompress files easily.
 
@@ -25,12 +25,12 @@ This tool comes with a **GUI built using Swing**, allowing users to compress and
 ```
 📛 FileCompressionTool  
  ┣ 📂 src  
- ┃ ┣ 📂 compression  
+ ┃ ┣ 📂 com.example.compression.algorithm  
  ┃ ┃ ┣ 📄 HuffmanCompression.java  
  ┃ ┃ ┣ 📄 LZWCompression.java  
  ┃ ┃ ┣ 📄 RLECompression.java  
  ┃ ┃ ┣ 📄 HuffmanNode.java  
- ┃ ┣ 📂 ui  
+ ┃ ┣ 📂 com.example.compression.ui  
  ┃ ┃ ┣ 📄 CompressionGUI.java  
  ┃ ┣ 📄 Main.java  
  ┣ 📄 README.md  
@@ -50,13 +50,13 @@ cd FileCompressionTool
 ### **2️⃣ Compile and Run**
 #### **🔹 Run from Terminal (CLI)**
 ```bash
-javac -d out src/compression/*.java src/ui/*.java
-java -cp out ui.CompressionGUI
+javac -d out src/com.example.compression.algorithm/*.java src/com.example.compression.ui/*.java
+java -cp out com.example.compression.ui.CompressionGUI
 ```
 
 #### **🔹 Run from an IDE (IntelliJ / Eclipse)**
 - Open the project in your IDE
-- Set **`ui.CompressionGUI`** as the **Main Class**
+- Set **`com.example.compression.ui.CompressionGUI`** as the **Main Class**
 - Click **Run** ▶
 
 ---
@@ -70,7 +70,7 @@ java -cp out ui.CompressionGUI
 ---
 
 ## **🎯 Future Improvements**
-✅ Add support for **image & binary file compression** 🌟  
+✅ Add support for **image & binary file com.example.compression.algorithm** 🌟  
 ✅ Implement **zip format support** 📦  
 ✅ Improve UI with **JavaFX or modern frameworks** ✨
 

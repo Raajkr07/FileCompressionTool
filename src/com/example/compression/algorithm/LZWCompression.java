@@ -1,10 +1,14 @@
-package com.example.compression.compression;
+package com.example.compression.algorithm;
 
 import java.util.*;
 
 public class LZWCompression {
 
     public static List<Integer> compress(String input) {
+
+        if (input == null || input.isEmpty())
+            throw new IllegalArgumentException(" input is empty");
+
         Map<String, Integer> dictionary = new HashMap<>();
         int dictSize = 256;
 
@@ -34,6 +38,10 @@ public class LZWCompression {
     }
 
     public static String decompress(List<Integer> compressed) {
+
+        if (compressed == null || compressed.isEmpty())
+            throw new IllegalArgumentException("Compressed data is empty");
+
         Map<Integer, String> dictionary = new HashMap<>();
         int dictSize = 256;
 
@@ -63,26 +71,5 @@ public class LZWCompression {
         }
 
         return result.toString();
-    }
-
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.print("Enter text to compress: ");
-        String userInput = scanner.nextLine();
-
-        List<Integer> compressed = compress(userInput);
-        System.out.println("\nCompressed Output: " + compressed);
-
-        String decompressed = decompress(new ArrayList<>(compressed));
-        System.out.println("\nDecompressed Output: " + decompressed);
-
-        if (userInput.equals(decompressed)) {
-            System.out.println("\n✅ Decompression Successful! The original and decompressed text match.");
-        } else {
-            System.out.println("\n❌ Decompression Failed! The texts do not match.");
-        }
-
-        scanner.close();
     }
 }

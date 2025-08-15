@@ -1,4 +1,4 @@
-package com.example.compression.compression;
+package com.example.compression.algorithm;
 
 class HuffmanNode implements Comparable<HuffmanNode> {
     char character;
@@ -10,7 +10,12 @@ class HuffmanNode implements Comparable<HuffmanNode> {
         this.frequency = frequency;
     }
 
+    @Override
     public int compareTo(HuffmanNode other) {
-        return this.frequency - other.frequency;
+        return Integer.compare(this.frequency, other.frequency);
+    }
+
+    boolean isLeaf() {
+        return left == null && right == null;
     }
 }
