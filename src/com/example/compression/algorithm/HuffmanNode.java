@@ -1,4 +1,4 @@
-package compression;
+package com.example.compression.compression;
 
 class HuffmanNode implements Comparable<HuffmanNode> {
     char character;
